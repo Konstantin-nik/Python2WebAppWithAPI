@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .translation-container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .original-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .translated-text {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Translation Result</h1>
+    <div class="translation-container">
+        <p class="original-text">Original Text:</p>
+        <p>{{ original_text }}</p>
+        <p class="translated-text">Translated Text:</p>
+        <p>{{ translated_text }}</p>
+    </div>
+</body>
+</html>
