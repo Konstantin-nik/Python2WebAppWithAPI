@@ -54,6 +54,7 @@ def index():
 def translate_m():
     text_to_translate = request.form['text_to_translate']
     target_language = request.form['target_language']
+    tts(text_to_translate, target_language)
 
     return render_template('translated.html', original_text=text_to_translate,
                            translated_text=target_language)
