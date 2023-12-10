@@ -58,6 +58,8 @@ def index():
 @app.route('/translate', methods=['POST'])
 def translate_m():
     text_to_translate = request.form['text_to_translate']
+    if text_to_translate == "":
+        return render_template('index.html')
     target_language = request.form['target_language']
 
     result = translate_text(target_language, text_to_translate)
